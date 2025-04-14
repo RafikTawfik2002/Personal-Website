@@ -29,13 +29,13 @@ function App() {
         </div>
 
         <div className="flex float-right px-4 items-center ">
-          <a href="https://github.com/RafikTawfik2002">
+          <a href="https://github.com/RafikTawfik2002" target="_blank">
           <div className="py-4 px-4">
             
             <VscGithub size={36} />
           </div>
           </a>
-          <a href="https://www.linkedin.com/in/rafik-tawfik-539b16261/">
+          <a href="https://www.linkedin.com/in/rafik-tawfik-539b16261/" target="_blank">
           <div className="py-4 px-4">
             <CiLinkedin size={40} />
           </div>
@@ -78,14 +78,14 @@ function App() {
               </div>
               <div className="m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md">
                 Github:{" "}
-                <a href="https://github.com/RafikTawfik2002" className="hover:underline">
+                <a href="https://github.com/RafikTawfik2002" target="_blank" className="hover:underline">
                   github.com/RafikTawfik2002
                 </a>
                 <br />
               </div>
               <div className="m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md">
                 Linkedin:{" "}
-                <a href="https://www.linkedin.com/in/rafik-tawfik-539b16261/"className="hover:underline">
+                <a href="https://www.linkedin.com/in/rafik-tawfik-539b16261/" target="_blank" className="hover:underline">
                   linkedin.com/in/rafik-tawfik-539b16261
                 </a>
                 <br />
