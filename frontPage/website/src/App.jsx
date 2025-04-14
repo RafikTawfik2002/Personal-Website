@@ -68,6 +68,7 @@ function App() {
         </div>
 
         {/* View and download resume */}
+        <div className='flex'></div>
         <div>
           View Resume
         </div>
