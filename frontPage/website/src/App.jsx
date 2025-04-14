@@ -78,7 +78,7 @@ function App() {
 
         </div>
         {/* Resume, bio, past experience */}
-         <div className='w-[60%] flex justify-center'><div><img width="700px"src="/Resume.jpg" alt="Description of image" /></div></div>
+         <div className='w-[60%] flex justify-center'><div><img quality={100} width="700px"src="/Resume.jpg" alt="Description of image" /></div></div>
       </div>
 
 
