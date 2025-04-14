@@ -7,6 +7,11 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa"; // light mode icon
 import { VscGithub } from "react-icons/vsc";
 import { MdMailOutline } from "react-icons/md";
+import { Document, Page } from 'react-pdf'
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+
 
 function App() {
 
@@ -38,15 +43,41 @@ function App() {
 
       {/* NAME AND RESUME SECTION */}
 
-      <div className=' border-red-100 px-20 py-20 bg-gray-700'>
+      <div className=' border-red-100 pl-20 pt-20 bg-gray-700 flex justify-between w-[100%]'>
         {/* Name and bio */}
+        <div className='w-[40%]'>
         <div className='text-5xl'>
             Rafik Tawfik
         </div>
-        <div className='text-lg mt-5 w-[40%]'>
-            Software engineer and computer scientist, specialitzed in full-stack development and passionate about working on software projects aimed at solving real life problems for as many people and businesses as possible
+        <div className='text-lg mt-5'>
+            Software engineer and computer scientist, specialized in 
+            full-stack development and passionate about working on software projects aimed at solving real life problems for as many people and businesses as possible
+        </div>
+
+        {/* Get in touch */}
+        <div className='mt-10 p-2 bg-gray-800 rounded-md'>
+        <div className='mb-3 p-3 text-2xl'>
+          Contacts
+        </div>
+        <div>
+          <div className='m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md'>Phone: +1 647 450 6368<br/></div>
+          <div className='m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md'>Email: rafikaymanramzy@gmail.com<br/></div>
+          <div className='m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md'>Github: <a href='https://github.com/RafikTawfik2002'>github.com/RafikTawfik2002</a><br/></div>
+          <div className='m-2 p-3 bg-gray-600 border-1 border-amber-100 rounded-md'>Linkedin: <a href='https://www.linkedin.com/in/rafik-tawfik-539b16261/'>linkedin.com/in/rafik-tawfik-539b16261</a><br/></div>
+        </div>
+        </div>
+
+        {/* View and download resume */}
+        <div>
+          View Resume
+        </div>
+        <div>
+          Download Resume
+        </div>
+
         </div>
         {/* Resume, bio, past experience */}
+         <div className='w-[60%] flex justify-center'><div><img width="700px"src="../public/Resume.jpg" alt="Description of image" /></div></div>
       </div>
 
 
@@ -54,5 +85,5 @@ function App() {
     </div>
   )
 }
-
+ 
 export default App
